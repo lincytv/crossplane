@@ -1,0 +1,137 @@
+=========================================================================
+
+  JBoss Bootstrap Environment
+
+  JBOSS_HOME: /opt/jboss/wildfly
+
+  JAVA: /usr/lib/jvm/java/bin/java
+
+  JAVA_OPTS:  -server -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true  --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED
+
+=========================================================================
+
+[0m06:43:27,543 INFO  [org.jboss.modules] (main) JBoss Modules version 1.12.0.Final
+[0m[0m06:43:30,967 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.13.Final
+[0m[0m06:43:31,111 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+[0m[0m06:43:31,575 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 25.0.0.Final (WildFly Core 17.0.1.Final) starting
+[0m[0m06:43:35,521 INFO  [org.wildfly.security] (ServerService Thread Pool -- 26) ELY00001: WildFly Elytron version 1.17.1.Final
+[0m[0m06:43:43,631 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 36) WFLYDR0001: Content added at location /opt/jboss/wildfly/standalone/data/content/84/37cbf553bb05898b678bf642808b07bafff4e4/content
+[0m[0m06:43:43,861 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+[0m[0m06:43:44,088 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.8.4.Final
+[0m[0m06:43:44,131 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.8.4.Final
+[0m[0m06:43:45,288 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 52) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+[0m[0m06:43:45,341 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 54) WFLYCLINF0001: Activating Infinispan subsystem.
+[0m[0m06:43:45,469 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 53) WFLYHEALTH0001: Activating Base Health Subsystem
+[0m[0m06:43:45,695 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 63) WFLYMETRICS0001: Activating Base Metrics Subsystem
+[0m[0m06:43:45,706 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 64) WFLYCONF0001: Activating MicroProfile Config Subsystem
+[0m[0m06:43:45,388 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 56) WFLYRS0016: RESTEasy version 4.7.2.Final
+[0m[0m06:43:45,659 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 61) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+[0m[0m06:43:45,805 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 65) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+[0m[0m06:43:45,748 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 1.5.2.Final)
+[0m[0m06:43:45,796 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 55) WFLYIO001: Worker 'default' has auto-configured to 2 IO threads with 16 max task threads based on your 1 available processors
+[0m[0m06:43:45,917 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 67) WFLYNAM0001: Activating Naming Subsystem
+[0m[0m06:43:45,982 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 66) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+[0m[0m06:43:46,043 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+[0m[0m06:43:46,025 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+[0m[33m06:43:45,969 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+[0m[0m06:43:48,545 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 5.0.23.Final
+[0m[0m06:43:48,284 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = h2
+[0m[0m06:43:50,446 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 16 (per class), which is derived from thread worker pool sizing.
+[0m[0m06:43:50,616 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
+[0m[0m06:43:50,623 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 4 (per class), which is derived from the number of CPUs on this host.
+[0m[0m06:43:50,818 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0003: Undertow 2.2.12.Final starting
+[0m[0m06:43:50,726 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+[0m[0m06:43:51,187 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path '/opt/jboss/wildfly/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+[0m[33m06:43:51,329 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-2) WFLYELY00023: KeyStore file '/opt/jboss/wildfly/standalone/configuration/application.keystore' does not exist. Used blank.
+[0m[33m06:43:51,840 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-2) WFLYELY01084: KeyStore /opt/jboss/wildfly/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self-signed certificate for host localhost
+[0m[0m06:43:53,054 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0012: Started server default-server.
+[0m[0m06:43:54,251 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTP listener default listening on 0.0.0.0:8080
+[0m[0m06:43:54,269 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) Queuing requests.
+[0m[0m06:43:54,283 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0018: Host default-host starting
+[0m[0m06:43:54,283 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+[0m[0m06:43:54,368 INFO  [org.jboss.as.patching] (MSC service thread 1-2) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+[0m[0m06:43:54,420 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:8443
+[0m[0m06:43:54,673 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory /opt/jboss/wildfly/standalone/deployments
+[0m[0m06:43:54,755 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "Fin-ER-Service.war" (runtime-name: "Fin-ER-Service.war")
+[0m[0m06:43:55,885 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 5.4.4.Final (Apache CXF 3.4.4) 
+[0m[0m06:43:56,127 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+[0m[33m06:44:16,004 WARN  [org.jboss.as.ee] (MSC service thread 1-2) WFLYEE0007: Not installing optional component org.springframework.http.server.reactive.ServletServerHttpResponse$ResponseAsyncListener due to an exception (enable DEBUG log level to see the cause)
+[0m[33m06:44:16,013 WARN  [org.jboss.as.ee] (MSC service thread 1-2) WFLYEE0007: Not installing optional component org.springframework.http.server.ServletServerHttpAsyncRequestControl due to an exception (enable DEBUG log level to see the cause)
+[0m[33m06:44:16,015 WARN  [org.jboss.as.ee] (MSC service thread 1-2) WFLYEE0007: Not installing optional component org.springframework.web.context.request.async.StandardServletAsyncWebRequest due to an exception (enable DEBUG log level to see the cause)
+[0m[33m06:44:16,017 WARN  [org.jboss.as.ee] (MSC service thread 1-2) WFLYEE0007: Not installing optional component org.springframework.http.server.reactive.ServletHttpHandlerAdapter$HttpHandlerAsyncListener due to an exception (enable DEBUG log level to see the cause)
+[0m[33m06:44:16,020 WARN  [org.jboss.as.ee] (MSC service thread 1-2) WFLYEE0007: Not installing optional component org.springframework.http.server.reactive.ServletServerHttpRequest$RequestAsyncListener due to an exception (enable DEBUG log level to see the cause)
+[0m[33m06:44:16,021 WARN  [org.jboss.as.ee] (MSC service thread 1-2) WFLYEE0007: Not installing optional component io.micrometer.core.instrument.binder.jetty.OnCompletionAsyncListener due to an exception (enable DEBUG log level to see the cause)
+[0m[33m06:44:16,193 WARN  [org.jboss.as.jaxrs] (MSC service thread 1-2) WFLYRS0018: Explicit usage of Jackson annotation in a Jakarta RESTful Web Services deployment; the system will disable Jakarta JSON Binding processing for the current deployment. Consider setting the 'resteasy.preferJacksonOverJsonB' property to 'false' to restore Jakarta JSON Binding.
+[0m[33m06:44:16,197 WARN  [org.jboss.as.jaxrs] (MSC service thread 1-2) WFLYRS0015: No Servlet declaration found for Jakarta RESTful Web Services application.  In Fin-ER-Service.war either provide a class that extends javax.ws.rs.core.Application or declare a servlet class in web.xml.
+[0m[0m06:44:16,305 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0004: Deploying JDBC-compliant driver class com.microsoft.sqlserver.jdbc.SQLServerDriver (version 9.2)
+[0m[33m06:44:16,320 WARN  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0013: Deployment Fin-ER-Service.war contains Jakarta Contexts and Dependency Injection annotations but no bean archive was found (no beans.xml or class with bean defining annotations was present).
+[0m[0m06:44:16,629 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = Fin-ER-Service.war_com.microsoft.sqlserver.jdbc.SQLServerDriver_9_2
+[0m[0m06:44:17,088 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 80) ISPN000128: Infinispan version: Infinispan 'Taedonggang' 12.1.7.Final
+[0m[0m06:44:17,194 INFO  [org.infinispan.CONFIG] (MSC service thread 1-1) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m06:44:17,202 INFO  [org.infinispan.CONFIG] (MSC service thread 1-1) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m06:44:17,274 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 80) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.spi.marshalling.InfinispanProtoStreamMarshaller'
+[0m[0m06:44:17,435 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 80) ISPN000025: wakeUpInterval is <= 0, not starting expired purge thread
+[0m[0m06:44:17,514 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 80) WFLYCLINF0002: Started http-remoting-connector cache from ejb container
+[0m[0m06:44:18,025 INFO  [io.undertow.servlet] (ServerService Thread Pool -- 90) 3 Spring WebApplicationInitializers detected on classpath
+[0m[31m06:44:18,610 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 90) MSC000001: Failed to start service jboss.deployment.unit."Fin-ER-Service.war".undertow-deployment: org.jboss.msc.service.StartException in service jboss.deployment.unit."Fin-ER-Service.war".undertow-deployment: java.lang.RuntimeException: java.lang.IllegalArgumentException: LoggerFactory is not a Logback LoggerContext but Logback is on the classpath. Either remove Logback or the competing implementation (class org.slf4j.impl.Slf4jLoggerFactory loaded from jar:file:/opt/jboss/wildfly/modules/system/layers/base/org/slf4j/impl/main/slf4j-jboss-logmanager-1.1.0.Final.jar!/). If you are using WebLogic you will need to add 'org.slf4j' to prefer-application-packages in WEB-INF/weblogic.xml: org.slf4j.impl.Slf4jLoggerFactory
+	at org.wildfly.extension.undertow@25.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:90)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.JBossThread.run(JBossThread.java:513)
+Caused by: java.lang.RuntimeException: java.lang.IllegalArgumentException: LoggerFactory is not a Logback LoggerContext but Logback is on the classpath. Either remove Logback or the competing implementation (class org.slf4j.impl.Slf4jLoggerFactory loaded from jar:file:/opt/jboss/wildfly/modules/system/layers/base/org/slf4j/impl/main/slf4j-jboss-logmanager-1.1.0.Final.jar!/). If you are using WebLogic you will need to add 'org.slf4j' to prefer-application-packages in WEB-INF/weblogic.xml: org.slf4j.impl.Slf4jLoggerFactory
+	at io.undertow.servlet@2.2.12.Final//io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:257)
+	at org.wildfly.extension.undertow@25.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:105)
+	at org.wildfly.extension.undertow@25.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:87)
+	... 8 more
+Caused by: java.lang.IllegalArgumentException: LoggerFactory is not a Logback LoggerContext but Logback is on the classpath. Either remove Logback or the competing implementation (class org.slf4j.impl.Slf4jLoggerFactory loaded from jar:file:/opt/jboss/wildfly/modules/system/layers/base/org/slf4j/impl/main/slf4j-jboss-logmanager-1.1.0.Final.jar!/). If you are using WebLogic you will need to add 'org.slf4j' to prefer-application-packages in WEB-INF/weblogic.xml: org.slf4j.impl.Slf4jLoggerFactory
+	at deployment.Fin-ER-Service.war//org.springframework.util.Assert.instanceCheckFailed(Assert.java:702)
+	at deployment.Fin-ER-Service.war//org.springframework.util.Assert.isInstanceOf(Assert.java:621)
+	at deployment.Fin-ER-Service.war//org.springframework.boot.logging.logback.LogbackLoggingSystem.getLoggerContext(LogbackLoggingSystem.java:294)
+	at deployment.Fin-ER-Service.war//org.springframework.boot.logging.logback.LogbackLoggingSystem.beforeInitialize(LogbackLoggingSystem.java:118)
+	at deployment.Fin-ER-Service.war//org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationStartingEvent(LoggingApplicationListener.java:232)
+	at deployment.Fin-ER-Service.war//org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:213)
+	at deployment.Fin-ER-Service.war//org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at deployment.Fin-ER-Service.war//org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at deployment.Fin-ER-Service.war//org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at deployment.Fin-ER-Service.war//org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at deployment.Fin-ER-Service.war//org.springframework.boot.context.event.EventPublishingRunListener.starting(EventPublishingRunListener.java:76)
+	at deployment.Fin-ER-Service.war//org.springframework.boot.SpringApplicationRunListeners.lambda$starting$0(SpringApplicationRunListeners.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at deployment.Fin-ER-Service.war//org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:117)
+	at deployment.Fin-ER-Service.war//org.springframework.boot.SpringApplicationRunListeners.starting(SpringApplicationRunListeners.java:53)
+	at deployment.Fin-ER-Service.war//org.springframework.boot.SpringApplication.run(SpringApplication.java:329)
+	at deployment.Fin-ER-Service.war//org.springframework.boot.web.servlet.support.SpringBootServletInitializer.run(SpringBootServletInitializer.java:175)
+	at deployment.Fin-ER-Service.war//org.springframework.boot.web.servlet.support.SpringBootServletInitializer.createRootApplicationContext(SpringBootServletInitializer.java:155)
+	at deployment.Fin-ER-Service.war//org.springframework.boot.web.servlet.support.SpringBootServletInitializer.onStartup(SpringBootServletInitializer.java:97)
+	at deployment.Fin-ER-Service.war//org.springframework.web.SpringServletContainerInitializer.onStartup(SpringServletContainerInitializer.java:174)
+	at io.undertow.servlet@2.2.12.Final//io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:204)
+	at io.undertow.servlet@2.2.12.Final//io.undertow.servlet.core.DeploymentManagerImpl$1.call(DeploymentManagerImpl.java:187)
+	at io.undertow.servlet@2.2.12.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+	at io.undertow.servlet@2.2.12.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@25.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1544)
+	at org.wildfly.extension.undertow@25.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1544)
+	at org.wildfly.extension.undertow@25.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1544)
+	at org.wildfly.extension.undertow@25.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1544)
+	at org.wildfly.extension.undertow@25.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1544)
+	at io.undertow.servlet@2.2.12.Final//io.undertow.servlet.core.DeploymentManagerImpl.deploy(DeploymentManagerImpl.java:255)
+	... 10 more
+
+[0m[31m06:44:18,645 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "Fin-ER-Service.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"Fin-ER-Service.war\".undertow-deployment" => "java.lang.RuntimeException: java.lang.IllegalArgumentException: LoggerFactory is not a Logback LoggerContext but Logback is on the classpath. Either remove Logback or the competing implementation (class org.slf4j.impl.Slf4jLoggerFactory loaded from jar:file:/opt/jboss/wildfly/modules/system/layers/base/org/slf4j/impl/main/slf4j-jboss-logmanager-1.1.0.Final.jar!/). If you are using WebLogic you will need to add 'org.slf4j' to prefer-application-packages in WEB-INF/weblogic.xml: org.slf4j.impl.Slf4jLoggerFactory
+    Caused by: java.lang.RuntimeException: java.lang.IllegalArgumentException: LoggerFactory is not a Logback LoggerContext but Logback is on the classpath. Either remove Logback or the competing implementation (class org.slf4j.impl.Slf4jLoggerFactory loaded from jar:file:/opt/jboss/wildfly/modules/system/layers/base/org/slf4j/impl/main/slf4j-jboss-logmanager-1.1.0.Final.jar!/). If you are using WebLogic you will need to add 'org.slf4j' to prefer-application-packages in WEB-INF/weblogic.xml: org.slf4j.impl.Slf4jLoggerFactory
+    Caused by: java.lang.IllegalArgumentException: LoggerFactory is not a Logback LoggerContext but Logback is on the classpath. Either remove Logback or the competing implementation (class org.slf4j.impl.Slf4jLoggerFactory loaded from jar:file:/opt/jboss/wildfly/modules/system/layers/base/org/slf4j/impl/main/slf4j-jboss-logmanager-1.1.0.Final.jar!/). If you are using WebLogic you will need to add 'org.slf4j' to prefer-application-packages in WEB-INF/weblogic.xml: org.slf4j.impl.Slf4jLoggerFactory"}}
+[0m[0m06:44:18,857 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "Fin-ER-Service.war" (runtime-name : "Fin-ER-Service.war")
+[0m[0m06:44:18,874 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."Fin-ER-Service.war".undertow-deployment: java.lang.RuntimeException: java.lang.IllegalArgumentException: LoggerFactory is not a Logback LoggerContext but Logback is on the classpath. Either remove Logback or the competing implementation (class org.slf4j.impl.Slf4jLoggerFactory loaded from jar:file:/opt/jboss/wildfly/modules/system/layers/base/org/slf4j/impl/main/slf4j-jboss-logmanager-1.1.0.Final.jar!/). If you are using WebLogic you will need to add 'org.slf4j' to prefer-application-packages in WEB-INF/weblogic.xml: org.slf4j.impl.Slf4jLoggerFactory
+WFLYCTL0448: 1 additional services are down due to their dependencies being missing or failed
+[0m[0m06:44:19,034 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+[0m[31m06:44:19,040 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: WildFly Full 25.0.0.Final (WildFly Core 17.0.1.Final) started (with errors) in 53732ms - Started 513 of 718 services (3 services failed or missing dependencies, 341 services are lazy, passive or on-demand)
+[0m[0m06:44:19,046 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+[0m[0m06:44:19,047 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+[0m[33m06:59:01,574 WARN  [org.wildfly.extension.elytron] (default task-1) WFLYELY01085: Generated self-signed certificate at /opt/jboss/wildfly/standalone/configuration/application.keystore. Please note that self-signed certificates are not secure and should only be used for testing purposes. Do not use this self-signed certificate in production.
+SHA-1 fingerprint of the generated key is 73:da:dd:c7:4b:cb:6d:93:3d:41:f8:65:03:3e:5a:a1:2d:56:d4:4b
+SHA-256 fingerprint of the generated key is a5:a0:d5:bc:6e:4f:1c:84:c5:bf:78:3b:c4:d4:03:97:7b:a2:d3:4d:36:2a:a3:7e:c4:d9:6b:14:47:95:4a:92

@@ -1,0 +1,12 @@
+name: simple action
+on: [push]
+job:
+  clone_repo_for_build:
+    run-on: ubuntu-latest
+    steps:
+      - user: actions/checkout@v3
+      - user: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - run: npm install 
+      - run: run
