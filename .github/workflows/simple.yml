@@ -1,7 +1,7 @@
 name: simple action
 on: [push]
-job:
-  clone_repo_for_build:
+jobs:
+  clone-repo-for-build:
     run-on: ubuntu-latest
     steps:
       - user: actions/checkout@v3
