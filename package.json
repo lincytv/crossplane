@@ -1,0 +1,19 @@
+{
+  "name": "crossplane",
+  "version": "1.0.0",
+  "description": "demo test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lincytv/crossplane.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lincytv/crossplane/issues"
+  },
+  "homepage": "https://github.com/lincytv/crossplane#readme"
+}
